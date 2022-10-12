@@ -14,7 +14,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* overflow: none; */
+    overflow: hidden;
 }
 
 /* classi centralizzate per uso in tutta la page */
@@ -26,7 +26,9 @@ body{
 .padder-8-tb{
     padding: 8px 0;
 }
-
+.padder-8{
+    padding: 8px;
+}
 
 /* 
 Classi per i container principali
@@ -45,7 +47,7 @@ Classi per i container principali
 
 .main-container{
     flex-grow: 1;
-    overflow: auto;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
 }
@@ -143,4 +145,22 @@ nav ul{
 }
 nav ul li{
     padding: 8px 8px 16px;
+}
+
+/* stili per le colonne, noto che in mobile sono a 2 a 2 */
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex-basis: 50%;
+    padding: 8px;
+    border: 1px dashed red;
+}
+
+.card{
+    padding: 8px;
+    background-color: aqua;
 }

@@ -40,6 +40,11 @@
     .aside-list-link{
         display: flex;
     }
+
+    .column{
+        flex-basis: auto;
+        flex-grow: 1;
+    }
 }
 
 
