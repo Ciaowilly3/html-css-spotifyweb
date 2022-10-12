@@ -84,9 +84,7 @@ aside{
     color: var(--primary-text-color);
     overflow: auto;
 }
-.mid-section .mid-content{
-    display: none;
-}
+
 
 .bottom-section{
     flex-shrink: 0;
@@ -103,4 +101,32 @@ aside{
     display: block;
     width: 75%;
     margin: auto;
+}
+
+.aside-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.aside-content-text{
+    display: none;
+}
+
+.aside-list-link{
+    display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+
+.mid-section a,
+.bottom-section a{
+    padding: 8px 0;
+    text-decoration: none;
+    color: var(--primary-text-color);
 }

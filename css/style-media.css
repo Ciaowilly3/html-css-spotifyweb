@@ -5,15 +5,12 @@
         min-width: 200px;
     }
 
-    .mid-section .mid-content{
-        display: block;
-    }
-
+    
     .top-section{
         text-align: left;
         padding-left: 8px;
     }
-
+    
     .mid-section{
         text-align: left;
         padding-left: 8px;
@@ -23,13 +20,25 @@
         text-align: left;
         padding-left: 8px;
     }
-
+    
     .logo-lg-container{
         display: block;
     }
-
+    
     .logo-xs-container{
         display: none;
+    }
+    
+    .aside-content-text{
+        display: inline-block;
+    }
+
+    .aside-list{
+        align-items: flex-start;
+    }
+
+    .aside-list-link{
+        display: flex;
     }
 }
 
