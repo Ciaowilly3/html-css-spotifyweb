@@ -1,0 +1,45 @@
+:root{
+    --command-bg-color: #282828;
+    --header-bg-color: #080b12;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* overflow: none; */
+}
+
+.top-container{
+    flex-grow: 1;
+    display: flex;
+}
+
+.commandbar-container{
+    flex-shrink: 0;
+    height: 100px;
+    border: 1px dashed brown;
+    background-color: var(--command-bg-color);
+}
+
+aside{
+    width: 60px;
+    flex-shrink: 0;
+    background-color: black;
+}
+
+.main-container{
+    flex-grow: 1;
+    overflow: auto;
+}
+
+header{
+    text-align: right;
+    padding: 24px 8px;
+    background-color: var(--header-bg-color);
+}
