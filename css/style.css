@@ -42,6 +42,7 @@ Classi per i container principali
     flex-shrink: 0;
     height: 100px;
     background-color: var(--command-bg-color);
+    display: flex;
 }
 
 
@@ -84,7 +85,6 @@ aside{
 .mid-section{
     flex-grow: 1;
     color: var(--primary-text-color);
-    overflow: auto;
 }
 
 
@@ -163,4 +163,18 @@ nav ul li{
 .card{
     padding: 8px;
     background-color: aqua;
+}
+
+/* sezioni per la command-bar */
+.left-command{
+    flex-shrink: 0;
+}
+
+.center-command{
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.right-command{
+    flex-shrink: 0;
 }
