@@ -1,6 +1,8 @@
 :root{
     --command-bg-color: #282828;
     --header-bg-color: #080b12;
+    --main-bg-color: #141922;
+    --primary-text-color: #a3a3a3;
 }
 
 *{
@@ -15,6 +17,16 @@ body{
     /* overflow: none; */
 }
 
+/* classi centralizzate per uso in tutta la page */
+
+.padder-16-tb{
+    padding: 16px 0;
+}
+
+
+/* 
+Classi per i container principali
+*/
 .top-container{
     flex-grow: 1;
     display: flex;
@@ -23,23 +35,68 @@ body{
 .commandbar-container{
     flex-shrink: 0;
     height: 100px;
-    border: 1px dashed brown;
     background-color: var(--command-bg-color);
 }
 
-aside{
-    width: 60px;
-    flex-shrink: 0;
-    background-color: black;
-}
 
 .main-container{
     flex-grow: 1;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
     text-align: right;
     padding: 24px 8px;
     background-color: var(--header-bg-color);
+    flex-shrink: 0;
+}
+
+main{
+    background-color: var(--main-bg-color);
+    flex-grow: 1;
+}
+
+/* 
+sezioni relativa all'aside 
+*/
+aside{
+    width: 60px;
+    flex-shrink: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section{
+    flex-shrink: 0;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.mid-section{
+    flex-grow: 1;
+    color: var(--primary-text-color);
+    overflow: auto;
+}
+.mid-section .mid-content{
+    display: none;
+}
+
+.bottom-section{
+    flex-shrink: 0;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.logo-lg-container{
+    display: none;
+    width: 150px;
+}
+
+.logo-xs-container{
+    display: block;
+    width: 75%;
+    margin: auto;
 }
