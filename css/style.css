@@ -125,8 +125,22 @@ aside{
 
 
 .mid-section a,
-.bottom-section a{
+.bottom-section a,
+nav a{
     padding: 8px 0;
     text-decoration: none;
     color: var(--primary-text-color);
+}
+
+/* Inizio gli stili del main partendo dalla nav */
+
+nav ul{
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    padding: 8px 8px 16px;
 }
