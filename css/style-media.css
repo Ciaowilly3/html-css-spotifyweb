@@ -52,6 +52,10 @@
     .column{
         flex-basis: 25%;
     }
+    .left-icon-container{
+        flex-direction: row;
+        padding-left: 32px;
+    }
 }
 
 

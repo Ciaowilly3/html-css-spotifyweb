@@ -27,11 +27,14 @@ body{
 .padder-16-l{
     padding-left: 16px;
 }
+.padder-8{
+    padding: 8px;
+}
 .padder-8-tb{
     padding: 8px 0;
 }
-.padder-8{
-    padding: 8px;
+.padder-8-l{
+    padding-left: 8px;
 }
 
 /* 
@@ -178,7 +181,8 @@ aside .bottom-section h6
 
 .mid-section a,
 .bottom-section a,
-nav a{
+nav a,
+.commandbar-container a{
     padding: 8px 0;
     text-decoration: none;
     color: var(--primary-text-color);
@@ -267,15 +271,54 @@ main h2{
 }
 
 /* sezioni per la command-bar */
+/* stili della zona sinistra */
 .left-command{
-    flex-shrink: 0;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
+.commandbar-img-container{
+    max-width: 60px;
+    min-width: 40px;
+}
+
+.commandbar-img-container img{
+    display: block;
+    width: 100%;
+}
+
+.left-command h5{
+    color: white;
+    font-weight: 500;
+}
+
+.left-command h6{
+    color: var(--primary-text-color);
+    font-weight: 300;
+}
+
+.left-icon-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: var(--primary-text-color);
+    padding-left: 8px;
+}
+
+.left-icon-container i{
+    padding: 4px;
+}
+/* stili zona centrale */
 .center-command{
-    flex-grow: 1;
-    flex-shrink: 0;
+    flex-grow: 3;
+    height: 100%;
+    display: flex;
 }
 
 .right-command{
-    flex-shrink: 0;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
 }
