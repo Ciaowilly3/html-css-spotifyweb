@@ -118,7 +118,8 @@ aside{
     display: flex;
     column-gap: 8px;
     margin-bottom: 8px;
-    align-items: center;
+    align-items: baseline;
+    font-weight: 300;
 }
 
 .aside-list li i{
@@ -127,6 +128,33 @@ aside{
 
 .aside-content-text{
     display: none;
+    font-size: 12px;
+}
+
+aside .mid-section h6,
+aside .bottom-section h6  
+{
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.aside-list-link .add-playlist{
+    display: flex;
+    align-items: center;
+}
+
+.aside-list-link .add-playlist div{
+    background-color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.aside-list-link .add-playlist div i{
+    font-size: 18px;
+    color: black;
 }
 
 .aside-list-link{
@@ -135,8 +163,13 @@ aside{
     flex-direction: column;
     list-style: none;
     padding-inline-start: 0;
+    font-size: 12px;
+    font-weight: 300;
 }
 
+.aside-list-link li{
+    margin: 8px 0;
+}
 
 .mid-section a,
 .bottom-section a,
@@ -145,6 +178,17 @@ nav a{
     text-decoration: none;
     color: var(--primary-text-color);
 }
+
+.aside-list li i.fa-circle-down{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+aside .gray-line{
+    border-bottom: 1px solid var(--primary-text-color);
+    margin-right: 16px;
+}
+
 
 /* Inizio gli stili del main partendo dalla nav */
 
