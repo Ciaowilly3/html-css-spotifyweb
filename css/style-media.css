@@ -41,6 +41,9 @@
         display: flex;
     }
 
+    aside .gray-line{
+        display: block;
+    }
 
 }
 
