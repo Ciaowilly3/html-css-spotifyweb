@@ -24,6 +24,9 @@ body{
     padding: 16px 0;
 }
 
+.padder-16-l{
+    padding-left: 16px;
+}
 .padder-8-tb{
     padding: 8px 0;
 }
@@ -35,8 +38,9 @@ body{
 Classi per i container principali
 */
 .top-container{
-    flex-grow: 1;
+
     display: flex;
+    height: calc(100vh - 100px);
 }
 
 .commandbar-container{
@@ -228,7 +232,6 @@ main h2{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 32px;;
     margin-left: 8px;
 }
 
@@ -253,11 +256,14 @@ main h2{
     margin: 8px 0;
 }
 
-.card h5{
+.subtitle{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 12px;
     margin: 8px 0;
+}
+.rounded-img{
+    border-radius: 50%;
 }
 
 /* sezioni per la command-bar */
