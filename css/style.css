@@ -8,6 +8,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -96,12 +97,12 @@ aside{
 
 .logo-lg-container{
     display: none;
-    width: 150px;
+    width: 128px;
 }
 
 .logo-xs-container{
     display: block;
-    width: 75%;
+    width: 50%;
     margin: auto;
 }
 
@@ -111,6 +112,17 @@ aside{
     flex-direction: column;
     list-style: none;
     padding-inline-start: 0;
+}
+
+.aside-list li{
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.aside-list li i{
+    font-size: 20px;
 }
 
 .aside-content-text{
@@ -152,6 +164,7 @@ nav ul li{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 32px;
 }
 
 .column{
