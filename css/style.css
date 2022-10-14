@@ -3,6 +3,7 @@
     --header-bg-color: #080b12;
     --main-bg-color: #141922;
     --primary-text-color: #a3a3a3;
+    --primary-effect-color: greenyellow;
 }
 
 *{
@@ -64,14 +65,18 @@ Classi per i container principali
 
 header{
     text-align: right;
-    padding: 24px 8px;
+    padding: 24px 16px;
     background-color: var(--header-bg-color);
     flex-shrink: 0;
+    width: calc(100vw - 60px);
+    position: fixed;
+    z-index: 10;
 }
 
 main{
     background-color: var(--main-bg-color);
     flex-grow: 1;
+    padding-top: 100px;
 }
 
 /* 
@@ -83,6 +88,7 @@ aside{
     background-color: black;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .top-section{
@@ -223,7 +229,9 @@ nav ul{
 nav ul li{
     padding: 8px 8px 16px;
     font-size: 14px;
+    position: relative;
 }
+
 
 /* stili per le colonne, noto che in mobile sono a 2 a 2 */
 main h2{
@@ -248,9 +256,23 @@ main h2{
     text-align: center;
 }
 
-.card .img-container img{
+.card .img-container img,
+.card .img-container-rounded img{
     width: 100%;
     display: block;
+}
+
+.card .img-container{
+    position: relative;
+}
+.card .play-button{
+    display: none;
+}
+
+.card .img-container-rounded{
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .card h3{
@@ -260,7 +282,7 @@ main h2{
     margin: 8px 0;
 }
 
-.subtitle{
+main .subtitle{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 12px;
@@ -294,9 +316,10 @@ main h2{
     font-weight: 500;
 }
 
-.left-command h6{
+.left-command .subtitle{
     color: var(--primary-text-color);
     font-weight: 300;
+    font-size: 12px;
 }
 
 .left-icon-container{
@@ -322,3 +345,56 @@ main h2{
     height: 100%;
     display: flex;
 }
+
+
+
+/* classi per effetti e animazioni */
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul li:hover .green-line{
+    width: 50%;
+    position: absolute;
+    bottom: 14px;
+    left: 25%;
+    border-bottom: 2px solid var(--primary-effect-color);
+}
+
+header button:active{
+    scale: 1.2;
+
+}
+
+.mid-section ul.aside-list-link li a:hover{
+    color: white;
+}
+
+.aside-content-text a:hover,
+.aside-content-icon a:hover{
+    color: white;
+}
+
+.commandbar-container a i:hover{
+    color: white;
+}
+
+
+.column .card:hover .play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    color: var(--primary-text-color);
+    backdrop-filter: brightness(0.5);
+}
+
+.left-command .subtitle a:hover{
+    text-decoration: underline;
+    color: white;
+}   

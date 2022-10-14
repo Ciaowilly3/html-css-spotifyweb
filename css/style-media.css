@@ -1,11 +1,12 @@
 @media screen and (min-width: 568px) {
+    header{
+        width: calc(100vw - 200px);
+    }
 
     /* sezioni relative all'aside */
     aside {
         min-width: 200px;
     }
-
-    
     .top-section{
         text-align: left;
         padding-left: 16px;
