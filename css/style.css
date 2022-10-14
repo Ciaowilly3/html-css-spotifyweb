@@ -340,13 +340,94 @@ main .subtitle{
     display: flex;
 }
 
+.center-player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    row-gap: 8px;
+}
+
+.center-icon-container a i{
+    font-size: 20px;
+    color: white;
+    padding: 0 8px;
+}
+
+.center-bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+.center-command .song-advancement{
+    color: white;
+    font-size: 12px;
+}
+
+.center-command .song-duration-bar{
+    height: 4px;
+    background-color: var(--primary-text-color);
+    border-radius: 8px;
+    flex-basis: 80%;
+    margin: 0px 10px;
+}
+
+.center-command .song-advancement-bar{
+    width: 20%;
+    height: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: white;
+    position: relative;
+}
+
+.center-command .song-advancement-circle{
+    display: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+/* stili zona destra */
 .right-command{
     flex-grow: 1;
     height: 100%;
     display: flex;
+    align-items: center;
 }
 
+.right-command .right-icon-container a i{
+    color: white;
+    padding: 0 6px;
+    font-size: 12px;
+}
 
+.right-command .right-icon-container{
+    display: flex;
+}
+
+.right-command .sound-bar{
+    height: 4px;
+    background-color: var(--primary-text-color);
+    border-radius: 8px;
+    width: 50%;
+    margin: 0px 10px;
+}
+
+.sound-bar .sound-bar-advancement{
+    width: 20%;
+    height: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: white;
+}
 
 /* classi per effetti e animazioni */
 nav ul li a:hover{
@@ -398,3 +479,17 @@ header button:active{
     text-decoration: underline;
     color: white;
 }   
+
+.center-icon-container a i.fa-circle-play:hover{
+    font-size: 24px;
+}
+
+.center-command .song-duration-bar:hover .song-advancement-bar,
+.center-command .song-advancement-bar:hover{
+    background-color: var(--primary-effect-color);
+}
+
+.center-command .song-duration-bar:hover .song-advancement-circle,
+.center-command .song-advancement-bar:hover .song-advancement-circle{
+    display: block;
+}
